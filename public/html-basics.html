@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 2</title>
+</head>
+<body>
+    <h1>This is heading 1</h1>
+    <h2>This is heading 2</h2>
+    <h3>This is heading 3</h3>
+    <h4>This is heading 4</h4>
+    <h5>This is heading 5</h5>
+    <h6>This is heading 6</h6>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quaerat reprehenderit quae sunt, tempora optio perferendis dolorum est praesentium laudantium cum illum id obcaecati eveniet dolore officiis ullam hic libero, earum, minima harum. Cupiditate maiores aspernatur, hic suscipit quaerat magni?</p>
+    <hr>
+    <a href="./travelling-booking.html">My travel booking webpage</a>
+    <hr>
+    <!-- this is a absolute link -->
+    <a href="https://google.com">click here to go to absolute link</a>
+    <p>  
+    </p>
+    <!-- this is relative link -->
+    <a href="./about.html">click here to go to relative link</a>
+    <!-- inserting image using relative link -->
+    <!-- <hr> -->
+    <img src="../assets/images/leo-edited-hd-wallpaper.jpg" height="300" alt="Leo movie moster">
+    <hr>
+    <img src="./images/imagech2.jfif" height="200" alt="ERROR">
+    <!-- inserting image using absolute link -->
+    <img src="https://images.unsplash.com/photo-1703159424431-a02e4890a8a6?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="200" alt="IMG NOT FOUND">
+    <hr>
+    <b>This is bold</b>
+    <br>
+    <i>This is italic</i>
+    <br>
+    <u>This is underline</u>
+    <hr>
+    <!-- subscript and superscript -->
+    <b>Formula of carbon di oxide using sub script -> CO <sub>2</sub></b>
+    <p>Equation using super script -> ax <sup>2</sup>+bx+c</p>
+    <hr>
+    <!-- using pre tag -->
+    <b><i>This is my C code for factorial</i></b>
+    <pre>
+        #include<iostream>
+            using namespace std;
+            int factorialUsingReccurssion(int n)
+            {
+                if(n == 0|| n == 1)
+                {
+                    return 1;
+                }
+                else
+                {
+                    return n*factorialUsingReccurssion(n-1);
+                }
+            }
+            int factorial(int n)
+            { 
+                int fact = 1;
+                for (int i = 1; i <= n; i++)
+                {
+                    fact *= i;
+                }
+                return fact;
+                
+            }
+            int main()
+            {
+                int n;
+                cout<<"Enter the value of n here :";
+                cin>>n;
+                cout<<factorialUsingReccurssion(n);
+                cout<<endl;
+                cout<<factorial(n);
+            }
+    </pre>
+</body>
+</html>

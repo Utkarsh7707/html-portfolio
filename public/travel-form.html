@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <header>
+        <h1>Trip form</h1>
+    </header>
+    <main>
+        <h2>
+            Fill the following travel form info
+        </h2>
+        <form action="action.php">
+            <div>
+                <input type="text" placeholder="First Name"><br>
+            </div>
+            <div>
+                <input type="text" placeholder="Last name"><br>
+            </div>
+            <div>
+                <input type="text" placeholder="Roll no"><br>
+            </div>
+            <p>select your section</p>
+            <label for="sectionida">
+                <input type="radio" value="section A" name="section" id="sectionida">section A 
+            </label>
+            <label for="sectionidb">
+                <input type="radio" value="section B" name="section" id="sectionidb">section B
+            </label>
+            <label for="sectionidc">
+                <input type="radio" value="section C" name="section" id="sectionidc">section C
+            </label>
+            <p>Tick this check box if you are bringing your own food</p>
+            <!-- type for = id so if you click the text it will work  -->
+            <label for="food">
+                <input type="checkbox" name="bringingfood" id="food">bringing food
+            </label>
+            <br>
+            <br>
+            <p>Address</p>
+                <textarea name="address" id="address" cols="30" rows="10" placeholder="Enter your address here "></textarea>
+                <br>
+                <p>Enter you mode of transport to the school</p>
+                <select name="vehicle" id="vehicle">
+                    <option value="no-vehicle">Your mode of transport to the school</option>
+                    <option value="Car">car</option>
+                    <option value="School bus">School bus</option>
+                    <option value="Cycle">Cycle</option>
+                    <option value="Bike">Bike</option>
+                    <option value="On foot">On foot</option>
+                </select>
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <a href="https://contactus.com" target="_main">contact us</a><br>
+        <a href="https://email.com" target="_main">email</a><br>
+    </footer>
+</body>
+
+</html>
